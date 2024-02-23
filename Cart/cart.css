@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+.container {
+    max-width: 1350px;
+    margin: auto;
+    width: 100%;
+}
+.nav{
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav>div{
+    width: 50vw;
+}
+.nav img{
+    width: 300px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 30vw;
+    height: 90vh;
+}
+.main>div{
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 5px;
+    align-items: center;
+}
+.main>div:nth-child(1) img{
+    width: 150px;
+}
+.main>div:nth-child(1) p{
+    font-size: 18px;
+}
+.main>div:nth-child(1) button{
+    padding: 10px 15px 10px 15px;
+    background: #ffffff;
+    border: 1px solid #51ccd3;
+    border-radius: 5px;
+    color: #51ccd3;
+    font-size: 18px;
+    cursor: pointer;
+}
+.line{
+    position: relative;
+    height: 1px;
+    width: 90%;
+    margin: 36px 0;
+    background-color: #d4d4d4;
+}
+
+.table{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+}
+table a{
+    font-size: 14px;
+    color: #51ccd3;
+}
+
+tr{
+    font-size: 14px;
+}
+
+@media all and (min-width : 481px) and (max-width : 768px) {
+    .nav img{
+        width: auto;
+    }
+    .main{
+        width: 100%;
+       height: 50vh;
+    }
+}
+
+@media all and (min-width : 320px) and (max-width : 480px) {
+    .nav img{
+        width: auto;
+    }
+    .main{
+        width: 100%;
+        height: 50vh;
+    }
+}
