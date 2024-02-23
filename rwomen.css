@@ -149,7 +149,7 @@
       visibility: hidden;
       margin-bottom: 50px;
     }
-    .products{
+    #products{
       display: grid;
       grid-template-columns: repeat(2,1fr);
       margin-bottom: 250px;
@@ -189,7 +189,7 @@
     .count{
       font-size: medium;
     }
-    .products{
+    #products{
       display: grid;
       grid-template-columns: repeat(2,1fr);
       width: 400px;
