@@ -66,6 +66,9 @@
     width: 280px;
     height: auto;
     margin: 50px 0 0 165px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
   #category,
   #sizes,
