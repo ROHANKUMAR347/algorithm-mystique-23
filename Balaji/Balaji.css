@@ -1,0 +1,90 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#mainSectionB{
+    width: 100%;
+   height: 100%;
+   
+
+}
+
+.containerB{
+    width: 80%;
+    height: 700px;
+    background-color:hsl(0,0%,96%) ;
+     margin-left:  100px;
+     margin-top: 50px;
+
+  display: flex;
+}
+.container1B{
+    padding: 50px;
+}
+.container11B{
+    width: 650px;
+    height: 500px;
+   background-color: white;
+}
+.container2B{
+    padding-left:50px;
+    padding-top: 130px;
+}
+.box1{
+    padding: 30px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.container12B{
+    height: 190px;
+    width:550px ;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap:50px;
+    color: hsl(0,0%,66%);
+    
+}
+.container13B{
+height: 40px;
+width:550px ;
+display: flex;
+justify-content: space-around;
+padding: 30px;
+color: hsl(0,0%,66%);
+}
+.box1>button{
+
+    padding: 10px 50px 10px 50px;
+}
+.underline{
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    
+}
+
+.container3B{
+    width: 80%;
+    height: auto;
+   
+    padding: 100px;
+}
+.container3B>p{
+    color:  hsl(0,0%,65%);
+}
+.container3B>span{
+    color:  hsl(0,0%,65%);
+}
+.container4B{
+    width: 80%;
+    height: auto;
+    padding-left: 100px;
+
+}
+.container4B>span{
+    font-size: 15px;
+}
+
