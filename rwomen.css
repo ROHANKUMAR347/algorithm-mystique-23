@@ -27,8 +27,10 @@
     margin-left: 300px;
   }
   #hl{
-    height: 30px;
+    /* height: 30px; */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    gap: 5px;
     align-items: center;
     text-align: center;
     
@@ -36,8 +38,8 @@
   #hl>button{
     color: black;
     cursor: pointer;
-    padding: 7px;
-    border: none;
+    padding: 3px;
+    /* border: none; */
   }
   .banner > img {
     width: 100%;
@@ -95,7 +97,7 @@
     margin: 0 0 0 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 10px;
     cursor: pointer;
    
   }
@@ -139,6 +141,9 @@
   } */
   
   /* for medium screens */
+  #footerDiv{
+    margin-top: 200px;
+   }
   @media all and (min-width: 768px) and (max-width: 1023px) {
     .count{
       margin-top: -250px;

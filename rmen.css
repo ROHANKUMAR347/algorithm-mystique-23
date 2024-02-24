@@ -57,7 +57,7 @@
   #products {
     /* border: 1px solid green; */
     width: 55%;
-    height: auto;
+    /* height: auto; */
     margin: 0 0 0 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -98,6 +98,10 @@
   #navbar {
     position: fixed;
     margin-top: -15px;
+  }
+
+  #footerDiv{
+   margin-top: 200px;
   }
   
   @media all and (min-width: 768px) and (max-width: 1023px) {

@@ -105,3 +105,17 @@ let sortLowToHigh = document.getElementById("lowTohight");
 sortLowToHigh.addEventListener("click", () => {
   fetchData(menUrl, `_sort=price&_order=asc`);
 });
+
+// footer
+// let footerContent=document.getElementById("rfooter");
+function loadFooter() {
+  fetch("p_footer.html")
+    .then((response) => response.text())
+    .then((html) => {
+      document.getElementById("rfooter").innerHTML = html;
+    })
+    .catch((error) => console.error("Error fetching footer:", error));
+}
+
+// Call the function when the page finishes loading
+window.addEventListener("load", loadFooter);
