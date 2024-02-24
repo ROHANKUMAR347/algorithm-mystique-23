@@ -2,9 +2,9 @@ let rcontainer = document.getElementById("products");
 
 let menUrl = "https://json-server-moc.onrender.com/womensData";
 
-async function fetchData(menUrl) {
+async function fetchData(menUrl, querrys = "") {
   try {
-    let res = await fetch(menUrl);
+    let res = await fetch(`${menUrl}?${querrys}`);
     let data = await res.json();
     rcontainer.innerHTML = "";
     appendProducts(data);
@@ -55,3 +55,13 @@ function appendProducts(data) {
     rcontainer.append(card);
   });
 }
+
+let sortHighToLow = document.getElementById("highTolow");
+sortHighToLow.addEventListener("click", () => {
+  fetchData(menUrl, `_sort=price&_order=desc`);
+});
+
+let sortLowToHigh = document.getElementById("lowTohight");
+sortLowToHigh.addEventListener("click", () => {
+  fetchData(menUrl, `_sort=price&_order=asc`);
+});
