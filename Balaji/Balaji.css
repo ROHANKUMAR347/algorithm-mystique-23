@@ -1,7 +1,37 @@
 body{
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
+#DomMain{
+    width: 80%;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(3,1fr);
+  padding-left: 150px;
+    
+}
+
+.card{
+    width: 400px;
+    height: 650px;
+  
+
+
+    
+}
+.card>img{
+    width: 400px;
+    height: 500px;
+    
+}
+.card>p{
+    color: hsl(0,0%,65%);
+}
+.card>h3{
+    color: hsl(0,0%,65%);
+}
+
+
 
 #mainSectionB{
     width: 100%;
@@ -87,4 +117,5 @@ color: hsl(0,0%,66%);
 .container4B>span{
     font-size: 15px;
 }
+
 
