@@ -88,7 +88,7 @@
     font-family: sans-serif;
     font-size: medium;
   }
-  .products {
+  #products {
     /* border: 1px solid green; */
     width: 55%;
     height: auto;
@@ -97,10 +97,14 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     cursor: pointer;
+   
   }
   .productbox {
     /* border: 1px solid greenyellow; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     height: auto;
+    text-align: center;
+    padding-bottom: 10px;
   }
   .productbox > img {
     width: 100%;
@@ -145,7 +149,7 @@
       visibility: hidden;
       margin-bottom: 50px;
     }
-    .products{
+    #products{
       display: grid;
       grid-template-columns: repeat(2,1fr);
       margin-bottom: 250px;
@@ -185,7 +189,7 @@
     .count{
       font-size: medium;
     }
-    .products{
+    #products{
       display: grid;
       grid-template-columns: repeat(2,1fr);
       width: 400px;
