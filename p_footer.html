@@ -1,296 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/cbd8105b4a.js" crossorigin="anonymous"></script>
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/cbd8105b4a.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
-        .p_foot {
-            width: 100%;
-            height: 380vh;
-            background-color: black;
-            margin-top: 10px;
-        }
+      .p_foot {
+        width: 100%;
+        background-color: black;
+        margin-top: 10px;
+      }
 
-        .p_foot1 {
-            width: 70%;
-            height: 35vh;
-            margin: 70px 190px;
+      .p_foot1 {
+        width: 70%;
+        height: auto;
+        margin: 70px 190px;
+      }
 
-        }
+      .p_foot2 {
+        width: 70%;
+        margin: 30px 190px;
+      }
 
-        .p_foot2 {
-            width: 70%;
-            height: 90vh;
-            margin: 30px 190px;
-        }
+      .p_foot3 {
+        width: 76%;
+        margin: 30px 100px 30px 190px;
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        font-weight: 400;
+        font-size: 18px;
+      }
 
-        .p_foot3 {
-            width: 76%;
-            height: 190vh;
-            margin: 30px 100px 30px 190px;
-            font-family: "Montserrat", sans-serif;
-            color: white;
-            font-weight: 400;
-            font-size: 18px;
-        }
+      .p_h3 {
+        font-family: "Kanit", sans-serif;
+        font-weight: 600;
+        font-size: 28px;
+        color: rgb(253, 216, 53);
+      }
 
-        .p_h3 {
-            font-family: "Kanit", sans-serif;
-            font-weight: 600;
-            font-size: 28px;
-            color: rgb(253, 216, 53);
-            /* margin: 50px 190px; */
-        }
+      .p_li li {
+        list-style: none;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 13px;
+      }
 
-        .p_li li {
-            list-style: none;
-            color: white;
-            font-family: "Montserrat", sans-serif;
-            font-weight: 500;
-            font-size: 13px;
-        }
+      .btn {
+        background-color: rgb(253, 216, 53);
+        font-size: 13px;
+        padding: 7px 20px;
+      }
 
-        .btn {
-            background-color: rgb(253, 216, 53);
-            /* border: none; */
-            font-size: 13px;
-            padding: 7px 20px;
-        }
+      #email {
+        background-color: black;
+      }
 
-        #email {
-            background-color: black;
-            /* border-color: rgb(253,216,53); */
-        }
-
-        .p_hr {
-            width: 70%;
-            height: auto;
-            margin-left: 190px;
-        }
+      .p_hr {
+        width: 70%;
+        height: auto;
+        margin-left: 190px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <footer class="p_foot d-flex flex-column">
-        <div class="p_foot1 d-flex justify-content-between ">
-            <div class="p_li">
-
-                <h4 class="p_h3">Bewakoof</h4>
-                <li style="color: rgb(253,216,53); padding-bottom: 25px;">CUSTOMER SERVICE</li>
-                <li>Contact Us</li>
-                <li>Track Order</li>
-                <li>Return Order</li>
-                <li>Cancle Order</li>
-                <li style="padding-top: 60px;"><i class="fa-solid fa-rotate-right"></i> 15 Days return policy</li>
-                <li style="padding-top: 15px;"><i class="fa-solid fa-indian-rupee-sign"></i> Cash on delivery</li>
-            </div>
-            <div class="p_li">
-                <br><br>
-                <li style="color: rgb(253,216,53); padding-bottom: 20px;">COMPANY</li>
-                <li>About Us</li>
-                <li>We're Hiring</li>
-                <li>Term&Condition</li>
-                <li>Privacy Policy</li>
-                <li>Blog</li>
-                <li style="color: rgb(253,216,53); padding-top: 40px;">DAWNLOAD THE APP</li>
-                <li style="padding-top: 15px;"><img width="100px"
-                        src="https://images.bewakoof.com/web/app_android_v1.png" alt=""><img width="100px"
-                        style="margin-left: 10px;" src="https://images.bewakoof.com/web/app_ios_v1.png" alt=""></li>
-            </div>
-            <div class="p_li">
-                <br><br>
-                <li style="color: rgb(253,216,53); padding-bottom: 20px;">CONNECT WITH US</li>
-                <li><i class="fa-brands fa-square-facebook fa-xl"></i> 4.5M People Like this</li>
-                <li style="padding-top: 10px;"><i class="fa-brands fa-instagram fa-xl"></i> 1M Followers</li>
-                <li style="padding-top: 10px;"><i class="fa-brands fa-twitter fa-lg"></i>
-                    <i class="fa-brands fa-pinterest fa-lg" style="padding-left: 12px;"></i>
-                    <i class="fa-brands fa-snapchat fa-lg" style="padding-left: 12px;"></i>
-                    <i class="fa-brands fa-apple fa-lg" style="padding-left: 12px;"></i>
-                </li>
-                <li style="color: rgb(253,216,53); padding-top: 60px;">100% SECURE PAYMENT</li>
-                <li style="padding-top: 15px;"><img src="https://images.bewakoof.com/web/secure-payments-image.png"
-                        alt="">
-                </li>
-            </div>
-            <div class="p_li">
-                <br><br>
-                <li style="color: rgb(253,216,53); padding-bottom: 20px;">KEEP UP TO DATE</li>
-                <input type="email" name="email" id="email" placeholder="Enter Email Id"><button type="button"
-                    class="btn">SUBSCRIBE</button>
-            </div>
+      <div class="p_foot1 d-flex justify-content-between">
+        <div class="p_li">
+          <h4 class="p_h3">Bewakoof</h4>
+          <li style="color: rgb(253, 216, 53); padding-bottom: 25px">
+            CUSTOMER SERVICE
+          </li>
+          <li>Contact Us</li>
+          <li>Track Order</li>
+          <li>Return Order</li>
+          <li>Cancle Order</li>
+          <li style="padding-top: 60px">
+            <i class="fa-solid fa-rotate-right"></i> 15 Days return policy
+          </li>
+          <li style="padding-top: 15px">
+            <i class="fa-solid fa-indian-rupee-sign"></i> Cash on delivery
+          </li>
         </div>
-        <div class="p_hr">
-            <hr style="border: 2px solid white;">
+        <div class="p_li">
+          <br /><br />
+          <li style="color: rgb(253, 216, 53); padding-bottom: 20px">
+            COMPANY
+          </li>
+          <li>About Us</li>
+          <li>We're Hiring</li>
+          <li>Term&Condition</li>
+          <li>Privacy Policy</li>
+          <li>Blog</li>
+          <li style="color: rgb(253, 216, 53); padding-top: 40px">
+            DAWNLOAD THE APP
+          </li>
+          <li style="padding-top: 15px">
+            <img
+              width="100px"
+              src="https://images.bewakoof.com/web/app_android_v1.png"
+              alt=""
+            /><img
+              width="100px"
+              style="margin-left: 10px"
+              src="https://images.bewakoof.com/web/app_ios_v1.png"
+              alt=""
+            />
+          </li>
         </div>
-        <div class="p_foot2 d-flex justify-content-between ">
-            <div class="p_li">
-                <li style="font-size: 18px; padding-bottom: 20px; font-weight: 700;">MEN'S CLOTHING</li>
-                <li>Top Wear</li>
-                <li>Men's New Arrivals</li>
-                <li>Men's Half Sleeve T-Shirts</li>
-                <li>Mens's Hoodies & Sweatshirts</li>
-                <li>Mens's Long Sleeve T-Shirts</li>
-                <li>Mens's Printed T-Shirts</li>
-                <li>Mens's Plain T-Shirts</li>
-                <li>Mens's Vests</li>
-                <li>Mens's Polo T-Shirts</li>
-                <li>Mens's Kurtas</li>
-                <li>Mens's Combo T-Shirts</li>
-                <li>Mens's Printed T-Shirts</li>
-                <li>Mens's Shirts</li>
-                <li>Mens's Nightwear</li>
-                <li>Mens's Plus size Store</li>
-                <li>Bottom Wear</li>
-                <li>Men's Pajamas</li>
-                <li>Mens's Boxer Shorts</li>
-                <li>Mens's Shorts</li>
-                <li>Mens's Track Pants</li>
-                <li>Mens's Pants</li>
-                <li>Featured</li>
-                <li>Mens's Flip Flops</li>
-                <li>Mens's Sliders</li>
-                <li>Marvel T-Shirts</li>
-                <li>Disney T-Shirts</li>
-                <li>Avengers T-Shirts</li>
-                <li>Star Wars T-Shirts</li>
-                <li>Batman T-Shirts</li>
-                <li>Superman T-Shirts</li>
-                <li>Joker T-Shirts</li>
-
-
-            </div>
-            <div class="p_li">
-                <li style="font-size: 18px; padding-bottom: 20px; font-weight: 700;">WOMEN'S CLOTHING</li>
-                <li>Women's Top Wear</li>
-                <li>Women's New Arrivals</li>
-                <li>Women's T-Shirts</li>
-                <li>Mens's Hoodies & Sweatshirts</li>
-                <li>Women's Dresses</li>
-                <li>Women's 3/4 Sleeve T-Shirts</li>
-                <li>Women's Kurtis</li>
-                <li>Women's Combo T-Shirts</li>
-                <li>Women's Nightwear</li>
-                <li>Women's Plus size Store</li>
-                <li>Women's Bottom Wear</li>
-                <li>Women's Pajamas</li>
-                <li>Women's Boxer Shorts</li>
-                <li>Women's Jeans</li>
-                <li>Women's Joggers</li>
-                <li>Women's Shorts</li>
-                <li>BAGS</li>
-                <li>Laptop Bags</li>
-                <li>Small Backpacks</li>
-                <li>Featured</li>
-                <li>Women's Slides</li>
-                <li>Women's Flip Flops</li>
-
-
-            </div>
-            <div class="p_li">
-                <li style="font-size: 18px; padding-bottom: 20px; font-weight: 700;">MOBILE COVERS</li>
-                <li>BrandApple</li>
-                <li>Realme</li>
-                <li>Samsung</li>
-                <li>Xiaomi</li>
-                <li>Oneplus</li>
-                <li>Vivo</li>
-                <li>Oppo</li>
-            </div>
-            <div class="p_li">
-                <li style="font-size: 18px; padding-bottom: 12px; font-weight: 700; color: rgb(81,204,204);">FANBOOK
-                </li>
-                <li style="font-size: 18px; padding-bottom: 12px; font-weight: 700; color: rgb(81,204,204);">OFFERS</li>
-                <li style="font-size: 18px; padding-bottom: 12px; font-weight: 700; color: rgb(81,204,204);">SITEMAP
-                </li>
-
-            </div>
-
+        <div class="p_li">
+          <br /><br />
+          <li style="color: rgb(253, 216, 53); padding-bottom: 20px">
+            CONNECT WITH US
+          </li>
+          <li>
+            <i class="fa-brands fa-square-facebook fa-xl"></i> 4.5M People Like
+            this
+          </li>
+          <li style="padding-top: 10px">
+            <i class="fa-brands fa-instagram fa-xl"></i> 1M Followers
+          </li>
+          <li style="padding-top: 10px">
+            <i class="fa-brands fa-twitter fa-lg"></i>
+            <i
+              class="fa-brands fa-pinterest fa-lg"
+              style="padding-left: 12px"
+            ></i>
+            <i
+              class="fa-brands fa-snapchat fa-lg"
+              style="padding-left: 12px"
+            ></i>
+            <i class="fa-brands fa-apple fa-lg" style="padding-left: 12px"></i>
+          </li>
+          <li style="color: rgb(253, 216, 53); padding-top: 60px">
+            100% SECURE PAYMENT
+          </li>
+          <li style="padding-top: 15px">
+            <img
+              src="https://images.bewakoof.com/web/secure-payments-image.png"
+              alt=""
+            />
+          </li>
         </div>
-        <div class="p_foot3">
-            <p style="font-weight: 600;">BEWAKOOF® THE NEW AGE ONLINE SHOPPING EXPERIENCE.</p>
-            <p>Founded in 2012, Bewakoof® is a lifestyle fashion brand that makes creative, distinctive fashion for the
-                trendy, contemporary Indian. Bewakoof® was created on the principle of creating impact through
-                innovation, honesty and thoughtfulness.</p>
-
-            <p>With a team of 400 members, and 2mn products sold till date. We like to experiment freely, which allows
-                us to balance creativity and relatability, and our innovative designs. Our range of products is always
-                fresh and up-to-date, and we clock sales of over 1 lakh products a month. Our innovation focus extends
-                to our operations as well. We are vertically integrated, manufacture our own products, and cut out the
-                middleman wherever possible. This direct-to-consumer model allows us to create high-quality fashion at
-                affordable prices. A thoughtful brand, we actively attempt to minimize our environmental footprint and
-                maximize our social impact. These efforts are integrated right into our day-to-day operations, from
-                rainwater harvesting to paper packaging to employee benefits. To create an accessible, affordable and
-                thoughtful experience of online shopping in India.</p><br>
-            <p style="font-weight: 600;">
-                ONLINE SHOPPING AT BEWAKOOF® IS HASSLE-FREE, CONVENIENT AND SUPER-EXCITING!</p>
-            <p>Online Shopping has always been a fun and exciting task for most and more so when the shopping mall is
-                none other than your own house. We have all had days when we have planned trips to the clothing store in
-                advance, dreaming about what we would buy once we get there. Now we wouldnt think twice before indulging
-                in some online shopping. Well, cut to todays time and age, you can do all this from the comfort of your
-                home while enjoying many online shopping offers, right from amazing deals and discounts to one of the
-                most robust user interface amongst most online shopping sites in India, with many shopping filters to
-                make your shopping experience truly hassle free. This in our own words is what we call Bewakoof.com.</p>
-            <p>
-                Bewakoof®, THE place to be when it comes to the coolest in online fashion, offers you fine, high-quality
-                merchandise go ahead and indulge in a bit of online shopping for men and womens fashion. So browse
-                through the exciting categories we have on offer from mens fashion to basic mens clothing as well as
-                wide variety in womenswear and womens clothes to the amazing range of accessories, fill up your carts
-                and get fast home delivery for all orders. All of this topped with our exclusive online shopping offers
-                makes for an exciting, irresistible and uber cool combo! You can even gift some to your near and dear
-                ones while being absolutely certain that it will put a smile on their faces.
-            </p><br>
-
-            <p style="font-weight: 600;">
-                BEWAKOOF.COM: THE QUIRKIEST ONLINE SHOPPING SITES OF ALL!</p>
-            <p>Online fashion is definitely more accessible with Bewakoof.com. Explore the latest collections in Marvel
-                t-shirts including avengers t-shirts and captain America t-shirts in official merchandise. Apart from
-                these, quirkiest of T-shirts that you wont find on any online shopping sites in India are showcased at
-                Bewakoof.com. If your wardrobe has been longing for a cool overhaul then bewakoof.com will certainly be
-                your best bet amongst all online shopping sites. Also, take a tour of our bewakoof® blog to stay abreast
-                with the latest runway trends and be a trendsetter among your immediate circles. What we wear speaks
-                volumes of us they say. But what if what you wore actually spoke what your mood was! Havent we all
-                wondered where we could get those quirky t-shirts and sport them with confidence? Sure otherwise getting
-                them made or even buying them from otherwise expensive online shopping sites for clothes may cost you
-                substantially but with Bewakoof.com, you will understand that you do not have to spend a fortune on
-                online fashion to look great. Sliders, joggers, sweatshirts, bag and bag packs and so much more are just
-                some of the other items you can grab hold of here.</p> <br>
-            <p style="font-weight: 600;">
-                AVAIL OF ONLINE SHOPPING BENEFITS AT BEWAKOOF.COM AND YOULL SHOP NOWHERE ELSE!</p>
-            <p>
-                Choose your product, get it ordered online, and we ensure that its delivery happens right at your
-                doorstep anywhere in India. You just need to take care of the payment for the product from the comfort
-                of your home, while we ensure free shipping all the time on almost everything with no strings attached.
-                For any second thoughts after purchase, we have in place a return policy as well. One of the best you
-                will find on any online shopping sites in India. For your online shopping experience to be safe and
-                risk-free, we offer Cash On Delivery (COD) facility too. So you dont have to worry anymore about your
-                hard earned money being stuck when you buy clothes online at bewakoof.com. Avail exciting online
-                shopping offers like designs of the day and colour of the month when you shop with us. Make sure to use
-                our easy 15-day returns policy, card or cash on delivery option and other customer-friendly features. A
-                comprehensive sizing guide and detailed product descriptions coupled with high-resolution product shots
-                will give you all the information to make the right buying decision. Give your wardrobe the much-needed
-                upgrade with uber cool clothing head to Bewakoof.com for a great online shopping india experience now!
-                Could you have asked for more?
-            </p><br>
-            
+        <div class="p_li">
+          <br /><br />
+          <li style="color: rgb(253, 216, 53); padding-bottom: 20px">
+            KEEP UP TO DATE
+          </li>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Email Id"
+          /><button type="button" class="btn">SUBSCRIBE</button>
         </div>
+      </div>
+      <div class="p_hr">
+        <hr style="border: 2px solid white" />
+      </div>
+      <div class="p_foot2 d-flex justify-content-between">
+        <div class="p_li">
+          <li style="font-size: 18px; padding-bottom: 20px; font-weight: 700">
+            MEN'S CLOTHING
+          </li>
+          <li>Top Wear</li>
+          <li>Men's New Arrivals</li>
+          <li>Men's Half Sleeve T-Shirts</li>
+          <li>Mens's Hoodies & Sweatshirts</li>
+          <li>Mens's Long Sleeve T-Shirts</li>
+          <li>Mens's Printed T-Shirts</li>
+          <li>Mens's Plain T-Shirts</li>
+          <li>Mens's Vests</li>
+          <li>Mens's Polo T-Shirts</li>
+          <li>Mens's Kurtas</li>
+          <li>Mens's Combo T-Shirts</li>
+          <li>Mens's Printed T-Shirts</li>
+          <li>Mens's Shirts</li>
+          <li>Mens's Nightwear</li>
+          <li>Mens's Plus size Store</li>
+          <li>Bottom Wear</li>
+          <li>Men's Pajamas</li>
+          <li>Mens's Boxer Shorts</li>
+          <li>Mens's Shorts</li>
+          <li>Mens's Track Pants</li>
+          <li>Mens's Pants</li>
+          <li>Featured</li>
+          <li>Mens's Flip Flops</li>
+          <li>Mens's Sliders</li>
+          <li>Marvel T-Shirts</li>
+          <li>Disney T-Shirts</li>
+          <li>Avengers T-Shirts</li>
+          <li>Star Wars T-Shirts</li>
+          <li>Batman T-Shirts</li>
+          <li>Superman T-Shirts</li>
+          <li>Joker T-Shirts</li>
+        </div>
+        <div class="p_li">
+          <li style="font-size: 18px; padding-bottom: 20px; font-weight: 700">
+            WOMEN'S CLOTHING
+          </li>
+          <li>Women's Top Wear</li>
+          <li>Women's New Arrivals</li>
+          <li>Women's T-Shirts</li>
+          <li>Mens's Hoodies & Sweatshirts</li>
+          <li>Women's Dresses</li>
+          <li>Women's 3/4 Sleeve T-Shirts</li>
+          <li>Women's Kurtis</li>
+          <li>Women's Combo T-Shirts</li>
+          <li>Women's Nightwear</li>
+          <li>Women's Plus size Store</li>
+          <li>Women's Bottom Wear</li>
+          <li>Women's Pajamas</li>
+          <li>Women's Boxer Shorts</li>
+          <li>Women's Jeans</li>
+          <li>Women's Joggers</li>
+          <li>Women's Shorts</li>
+          <li>BAGS</li>
+          <li>Laptop Bags</li>
+          <li>Small Backpacks</li>
+          <li>Featured</li>
+          <li>Women's Slides</li>
+          <li>Women's Flip Flops</li>
+        </div>
+        <div class="p_li">
+          <li style="font-size: 18px; padding-bottom: 20px; font-weight: 700">
+            MOBILE COVERS
+          </li>
+          <li>BrandApple</li>
+          <li>Realme</li>
+          <li>Samsung</li>
+          <li>Xiaomi</li>
+          <li>Oneplus</li>
+          <li>Vivo</li>
+          <li>Oppo</li>
+        </div>
+        <div class="p_li">
+          <li
+            style="
+              font-size: 18px;
+              padding-bottom: 12px;
+              font-weight: 700;
+              color: rgb(81, 204, 204);
+            "
+          >
+            FANBOOK
+          </li>
+          <li
+            style="
+              font-size: 18px;
+              padding-bottom: 12px;
+              font-weight: 700;
+              color: rgb(81, 204, 204);
+            "
+          >
+            OFFERS
+          </li>
+          <li
+            style="
+              font-size: 18px;
+              padding-bottom: 12px;
+              font-weight: 700;
+              color: rgb(81, 204, 204);
+            "
+          >
+            SITEMAP
+          </li>
+        </div>
+      </div>
+      <div class="p_foot3">
+        <p style="font-weight: 600">
+          BEWAKOOF® THE NEW AGE ONLINE SHOPPING EXPERIENCE.
+        </p>
+        <p>
+          Founded in 2012, Bewakoof® is a lifestyle fashion brand that makes
+          creative, distinctive fashion for the trendy, contemporary Indian.
+          Bewakoof® was created on the principle of creating impact through
+          innovation, honesty and thoughtfulness.
+        </p>
+
+        <p>
+          With a team of 400 members, and 2mn products sold till date. We like
+          to experiment freely, which allows us to balance creativity and
+          relatability, and our innovative designs. Our range of products is
+          always fresh and up-to-date, and we clock sales of over 1 lakh
+          products a month. Our innovation focus extends to our operations as
+          well. We are vertically integrated, manufacture our own products, and
+          cut out the middleman wherever possible. This direct-to-consumer model
+          allows us to create high-quality fashion at affordable prices. A
+          thoughtful brand, we actively attempt to minimize our environmental
+          footprint and maximize our social impact. These efforts are integrated
+          right into our day-to-day operations, from rainwater harvesting to
+          paper packaging to employee benefits. To create an accessible,
+          affordable and thoughtful experience of online shopping in India.
+        </p>
+        <br />
+        <p style="font-weight: 600">
+          ONLINE SHOPPING AT BEWAKOOF® IS HASSLE-FREE, CONVENIENT AND
+          SUPER-EXCITING!
+        </p>
+        <p>
+          Online Shopping has always been a fun and exciting task for most and
+          more so when the shopping mall is none other than your own house. We
+          have all had days when we have planned trips to the clothing store in
+          advance, dreaming about what we would buy once we get there. Now we
+          wouldnt think twice before indulging in some online shopping. Well,
+          cut to todays time and age, you can do all this from the comfort of
+          your home while enjoying many online shopping offers, right from
+          amazing deals and discounts to one of the most robust user interface
+          amongst most online shopping sites in India, with many shopping
+          filters to make your shopping experience truly hassle free. This in
+          our own words is what we call Bewakoof.com.
+        </p>
+        <p>
+          Bewakoof®, THE place to be when it comes to the coolest in online
+          fashion, offers you fine, high-quality merchandise go ahead and
+          indulge in a bit of online shopping for men and womens fashion. So
+          browse through the exciting categories we have on offer from mens
+          fashion to basic mens clothing as well as wide variety in womenswear
+          and womens clothes to the amazing range of accessories, fill up your
+          carts and get fast home delivery for all orders. All of this topped
+          with our exclusive online shopping offers makes for an exciting,
+          irresistible and uber cool combo! You can even gift some to your near
+          and dear ones while being absolutely certain that it will put a smile
+          on their faces.
+        </p>
+        <br />
+
+        <p style="font-weight: 600">
+          BEWAKOOF.COM: THE QUIRKIEST ONLINE SHOPPING SITES OF ALL!
+        </p>
+        <p>
+          Online fashion is definitely more accessible with Bewakoof.com.
+          Explore the latest collections in Marvel t-shirts including avengers
+          t-shirts and captain America t-shirts in official merchandise. Apart
+          from these, quirkiest of T-shirts that you wont find on any online
+          shopping sites in India are showcased at Bewakoof.com. If your
+          wardrobe has been longing for a cool overhaul then bewakoof.com will
+          certainly be your best bet amongst all online shopping sites. Also,
+          take a tour of our bewakoof® blog to stay abreast with the latest
+          runway trends and be a trendsetter among your immediate circles. What
+          we wear speaks volumes of us they say. But what if what you wore
+          actually spoke what your mood was! Havent we all wondered where we
+          could get those quirky t-shirts and sport them with confidence? Sure
+          otherwise getting them made or even buying them from otherwise
+          expensive online shopping sites for clothes may cost you substantially
+          but with Bewakoof.com, you will understand that you do not have to
+          spend a fortune on online fashion to look great. Sliders, joggers,
+          sweatshirts, bag and bag packs and so much more are just some of the
+          other items you can grab hold of here.
+        </p>
+        <br />
+        <p style="font-weight: 600">
+          AVAIL OF ONLINE SHOPPING BENEFITS AT BEWAKOOF.COM AND YOULL SHOP
+          NOWHERE ELSE!
+        </p>
+        <p>
+          Choose your product, get it ordered online, and we ensure that its
+          delivery happens right at your doorstep anywhere in India. You just
+          need to take care of the payment for the product from the comfort of
+          your home, while we ensure free shipping all the time on almost
+          everything with no strings attached. For any second thoughts after
+          purchase, we have in place a return policy as well. One of the best
+          you will find on any online shopping sites in India. For your online
+          shopping experience to be safe and risk-free, we offer Cash On
+          Delivery (COD) facility too. So you dont have to worry anymore about
+          your hard earned money being stuck when you buy clothes online at
+          bewakoof.com. Avail exciting online shopping offers like designs of
+          the day and colour of the month when you shop with us. Make sure to
+          use our easy 15-day returns policy, card or cash on delivery option
+          and other customer-friendly features. A comprehensive sizing guide and
+          detailed product descriptions coupled with high-resolution product
+          shots will give you all the information to make the right buying
+          decision. Give your wardrobe the much-needed upgrade with uber cool
+          clothing head to Bewakoof.com for a great online shopping india
+          experience now! Could you have asked for more?
+        </p>
+        <br />
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
