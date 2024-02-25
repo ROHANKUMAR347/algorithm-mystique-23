@@ -96,9 +96,9 @@ body {
     text-transform: capitalize;
     border: 0.5px solid #979797;
 }
-#flag{
+#flag {
     background-image: url("https://images.bewakoof.com/web/india-flag-round-1639566913.png");
-    position: left;
+    background-position: left center; /* Set the background position */
     padding-left: 30px;
     background-size: 20px;
     background-repeat: no-repeat;
