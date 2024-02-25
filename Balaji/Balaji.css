@@ -1,121 +1,198 @@
-body{
+
+body {
     padding: 0px;
     margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#DomMain{
-    width: 80%;
+
+#DomMain {
+    width: 60%;
     display: grid;
-    justify-content: space-around;
-    grid-template-columns: repeat(3,1fr);
-  padding-left: 150px;
-    
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
-.card{
-    width: 400px;
-    height: 650px;
-  
-
-
-    
-}
-.card>img{
-    width: 400px;
-    height: 500px;
-    
-}
-.card>p{
-    color: hsl(0,0%,65%);
-}
-.card>h3{
-    color: hsl(0,0%,65%);
+.card {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
+.card > img {
+    width: 300px;
+    height: 350px;
+}
+
+.card > p {
+    color: hsl(0, 0%, 65%);
+}
+
+.Card-Item {
+    display: flex;
+    align-items: center;
+}
+
+.Card-Item > span {
+    color: hsl(0, 0%, 65%);
+    font-size: x-large;
+    padding-right: 10px;
+}
+
+.Card-Item > button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: 90px;
+}
 
 
-#mainSectionB{
+
+#mainSectionB {
     width: 100%;
-   height: 100%;
-   
+    height: 100%;
+
 
 }
 
-.containerB{
-    width: 80%;
+.containerB {
+    width: 85%;
     height: 700px;
-    background-color:hsl(0,0%,96%) ;
-     margin-left:  100px;
-     margin-top: 50px;
+    background-color: hsl(0, 0%, 96%);
+    margin-left: 150px;
+    margin-top: 50px;
 
-  display: flex;
+    display: flex;
 }
-.container1B{
+
+.container1B {
     padding: 50px;
 }
-.container11B{
+
+.container11B {
     width: 650px;
     height: 500px;
-   background-color: white;
+    background-color: white;
 }
-.container2B{
-    padding-left:50px;
+
+.container2B {
+    padding-left: 50px;
     padding-top: 130px;
 }
-.box1{
+
+.box1 {
     padding: 30px;
     padding-top: 50px;
     display: flex;
     justify-content: space-around;
 }
-.container12B{
+
+.container12B {
     height: 190px;
-    width:550px ;
+    width: 550px;
     padding: 20px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    row-gap:50px;
-    color: hsl(0,0%,66%);
-    
+    row-gap: 50px;
+    color: hsl(0, 0%, 66%);
+
 }
-.container13B{
-height: 40px;
-width:550px ;
-display: flex;
-justify-content: space-around;
-padding: 30px;
-color: hsl(0,0%,66%);
+
+.container13B {
+    height: 40px;
+    width: 550px;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    color: hsl(0, 0%, 66%);
 }
-.box1>button{
+
+.box1>button {
 
     padding: 10px 50px 10px 50px;
 }
-.underline{
+
+.underline {
     text-decoration: underline;
     text-decoration-color: yellow;
-    
+
 }
 
-.container3B{
-    width: 80%;
+.container3B {
+    width: 90%;
     height: auto;
-   
+
     padding: 100px;
+    padding-left: 150px;
 }
-.container3B>p{
-    color:  hsl(0,0%,65%);
+
+.container3B>p {
+    color: hsl(0, 0%, 65%);
 }
-.container3B>span{
-    color:  hsl(0,0%,65%);
+
+.container3B>span {
+    color: hsl(0, 0%, 65%);
 }
-.container4B{
-    width: 80%;
+
+.container4B {
+    width: 90%;
     height: auto;
-    padding-left: 100px;
+    padding-left: 150px;
 
 }
-.container4B>span{
+
+.container4B>span {
     font-size: 15px;
 }
 
 
+
+.B_foot {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    margin-top: 10px;
+    color: white;
+}
+
+.B_foot1 {
+    width: 80%;
+
+    margin: 70px 150px;
+
+}
+
+.B_foot2 {
+    width: 80%;
+
+    margin: 10px 150px;
+}
+
+
+@media screen and (max-width: 768px){
+    #DomMain {
+        width: 60%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 365px){
+    #DomMain {
+        width: 60%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
