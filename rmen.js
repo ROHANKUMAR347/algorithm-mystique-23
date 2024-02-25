@@ -119,3 +119,5 @@ function loadFooter() {
 
 // Call the function when the page finishes loading
 window.addEventListener("load", loadFooter);
+
+// navbar
