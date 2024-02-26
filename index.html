@@ -16,13 +16,18 @@
       crossorigin="anonymous"
     ></script>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat", sans-serif;
+      }
       .parent {
         border: 1px solid black;
         height: auto;
         width: auto;
       }
       .main {
-        border: 1px solid black;
+        border: none;
         height: 100px;
         width: auto;
       }
@@ -31,7 +36,20 @@
         height: 35px;
         width: auto;
         display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
         background-color: rgb(238, 238, 238);
+      }
+      .child1 > div:last-child {
+        margin-left: auto;
+      }
+      .child1 > div > a {
+        font-size: 14px;
+        color: black;
+        text-decoration: none;
       }
       .box1 {
         border: none;
@@ -67,10 +85,13 @@
         position: absolute;
       }
       .section {
+        margin-top: 30px;
         border: 1px solid black;
-        height: 100px;
+        /* height: 100px; */
         width: auto;
         display: flex;
+        align-items: center;
+        justify-content: center;
         gap: 30px;
       }
       .section > div {
@@ -78,6 +99,10 @@
         height: 70px;
         width: 150px;
         margin-top: 10px;
+      }
+      .section > div > a {
+        text-decoration: none;
+        color: black;
       }
       .firstSection {
         margin-left: 20px;
@@ -89,12 +114,12 @@
       }
       .log {
         border: none;
-        height: 15px;
+        height: auto;
         width: 100px;
         margin-top: 5px;
         margin-left: 60px;
         cursor: pointer;
-        background-color: rgb(211, 211, 211);
+        background: none;
       }
       .zany {
         border: none;
@@ -126,6 +151,11 @@
         width: auto;
         display: flex;
       }
+      .container-fluid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
       .child3 > div {
         border: none;
         height: 200px;
@@ -140,32 +170,37 @@
       .text2 {
         text-align: center;
       }
+      .navbar-nav {
+        display: flex;
+      }
     </style>
   </head>
   <body>
     <div class="parent">
       <div class="main">
         <div class="child1">
-          <div class="box1">
-            <h7 class="text">Offers</h7>
+          <div>
+            <a href="#">Offers</a>
           </div>
-          <div class="box">
-            <h7 class="text"> Fanbook</h7>
+          <div>
+            <a href="#">Fanbook</a>
           </div>
-          <div class="box">
-            <h7 class="text"> Download App</h7>
+          <div>
+            <a href="#">Download App</a>
           </div>
-          <div class="box">
-            <h7 class="text"> TriBe Membership</h7>
+          <div>
+            <a href="#">TriBe Membership</a>
           </div>
-          <div class="contact">
-            <h7 class="text">Contact Us</h7>
+          <div>
+            <a href="#">Track Order</a>
           </div>
-          <div class="track">
-            <h7 class="text"> Track Order</h7>
+          <div>
+            <a href="#">Track Order</a>
           </div>
 
-          <button class="log">LOG IN</button>
+          <div>
+            <a href="./loginPage/login.html">LOG IN</a>
+          </div>
         </div>
         <div class="child2">
           <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -195,54 +230,36 @@
                   style="--bs-scroll-height: 100px"
                 >
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="nav-item dropdown">
                     <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
+                      class="nav-link active"
+                      aria-current="page"
+                      href="index.html"
+                      >HOME</a
                     >
-                      MENS
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="#">MEN FOOTWEAR</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">MEN ACCESSORIES</a>
-                      </li>
-                      <li><hr class="dropdown-divider" /></li>
-                      <li><a class="dropdown-item" href="#"></a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      WOMENS
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="#">WOMEN FOOTWEAR</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">WOMEN ACCESSORIES</a>
-                      </li>
-                      <li><hr class="dropdown-divider" /></li>
-                      <li><a class="dropdown-item" href="#"></a></li>
-                    </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true"
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="rmen.html"
+                      >MEN</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="rwomen.html"
+                      >WOMEN</a
+                    >
+                  </li>
+
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-disabled="true"
+                      style="cursor: pointer"
+                      href="./Balaji/Balaji.html"
                       >MOBILE ACCESORIES</a
                     >
                   </li>
@@ -265,28 +282,16 @@
       </div>
       <div class="section">
         <div class="firstSection">
-          <h5 class="text1">LIVE NOW</h5>
+          <a href="#">LIVE NOW</a>
         </div>
         <div>
-          <h5 class="text1">MEN</h5>
+          <a href="">MEN</a>
         </div>
         <div>
-          <h5 class="text1">WOMEN</h5>
+          <a href="./p_women.html">WOMEN</a>
         </div>
         <div>
-          <h5 class="text1">ACCESORIES</h5>
-        </div>
-        <div>
-          <h5 class="text1">EXPLORE NOW</h5>
-        </div>
-        <div>
-          <h5 class="text1">HEAVY DUTY</h5>
-        </div>
-        <div>
-          <h5 class="text1">BEWAKOOF AIR</h5>
-        </div>
-        <div>
-          <h5 class="text1">OFFICIAL MERCH</h5>
+          <a href="#">ACCESSORIES</a>
         </div>
       </div>
       <div class="carousel-container">
