@@ -46,3 +46,7 @@ The project was developed collaboratively by the following 4 team members:
 - **Servjyoti** - fw28_282
   <a href="https://www.linkedin.com/in/sarvjyoti-607957256">LinkedIn</a>
   <a href="https://github.com/RSarvjyoti">Github</a>
+
+  - **Balaji Deshmukh** - fw28_282
+  <a href="#">LinkedIn</a>
+  <a href="#">Github</a>
